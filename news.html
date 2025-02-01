@@ -50,7 +50,7 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index.html">
+							<a href="index_2.html">
 								<img src="assets/img/logo.png" alt="">
 							</a>
 						</div>
@@ -59,16 +59,13 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="#">Home</a>
-									<ul class="sub-menu">
-										<li><a href="index.html">Static Home</a></li>
-										<li><a href="index_2.html">Slider Home</a></li>
-									</ul>
+								<li><a href="index_2.html">Home</a>
+					
 								</li>
 								<li><a href="about.html">About</a></li>
 								<li><a href="#">Pages</a>
 									<ul class="sub-menu">
-										<li><a href="404.html">404 page</a></li>
+										<li><a href="#">404 page</a></li>
 										<li><a href="about.html">About</a></li>
 										<li><a href="cart.html">Cart</a></li>
 										<li><a href="checkout.html">Check Out</a></li>
@@ -77,11 +74,7 @@
 										<li><a href="shop.html">Shop</a></li>
 									</ul>
 								</li>
-								<li><a href="news.html">News</a>
-									<ul class="sub-menu">
-										<li><a href="news.html">News</a></li>
-										<li><a href="single-news.html">Single News</a></li>
-									</ul>
+								<li class="current-list-item"><a href="news.html">Services</a>
 								</li>
 								<li><a href="contact.html">Contact</a></li>
 								<li><a href="shop.html">Shop</a>
@@ -136,7 +129,7 @@
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
 						<p>Organic Information</p>
-						<h1>News Article</h1>
+						<h1>Our services</h1>
 					</div>
 				</div>
 			</div>
@@ -146,93 +139,133 @@
 
 	<!-- latest news -->
 	<div class="latest-news mt-150 mb-150">
-		<div class="container">
+		<div class="container" id="news_container">
 			<div class="row">
 				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-1"></div></a>
+					<div class="single-latest-news" onclick="setTitle(event)">
+						<a href="single-news.html">
+							<div class="latest-news-bg news-bg-1"></div>
+						</a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">You will vainly look for fruit on it in autumn.</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+							<h3 id="service-real-title"><a href="single-news.html">Book Printing</a></h3>
+							<p class="excerpt">
+							 
 							</p>
-							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
 							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
+					
 				</div>
+
 				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news">
+					<div class="single-latest-news"  onclick="setTitle(event)">
 						<a href="single-news.html"><div class="latest-news-bg news-bg-2"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">A man's worth has its season, like tomato.</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+							<h3><a href="single-news.html">Sticker Printing</a></h3>
+							<p class="excerpt">
+
 							</p>
-							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
 							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news">
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class = "single-latest-news"  onclick="setTitle(event)">
 						<a href="single-news.html"><div class="latest-news-bg news-bg-3"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">Good thoughts bear good fresh juicy fruit.</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+							<h3><a href="single-news.html">Visiting card Designing and printing</a></h3>
+							<p class="excerpt">
+
 							</p>
-							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
 							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news">
+					<div class="single-latest-news"  onclick="setTitle(event)">
 						<a href="single-news.html"><div class="latest-news-bg news-bg-4"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">Fall in love with the fresh orange</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+							<h3><a href="single-news.html">Letter head Designing and Printing</a></h3>
+
+							<p class="excerpt">
+
 							</p>
-							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
 							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news">
+					<div class="single-latest-news"  onclick="setTitle(event)">
 						<a href="single-news.html"><div class="latest-news-bg news-bg-5"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">Why the berries always look delecious</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2019</span>
+							<h3><a href="single-news.html">ID card Designing and Printing (Plastic)</a></h3>
+							<p class="excerpt">
+
 							</p>
-							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
 							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
+				<!--Invitationncard-->
 				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news">
+					<div class="single-latest-news"  onclick="setTitle(event)">
 						<a href="single-news.html"><div class="latest-news-bg news-bg-6"></div></a>
 						<div class="news-text-box">
-							<h3><a href="single-news.html">Love for fruits are genuine of John Doe</a></h3>
-							<p class="blog-meta">
-								<span class="author"><i class="fas fa-user"></i> Admin</span>
-								<span class="date"><i class="fas fa-calendar"></i> 27 December, 2018</span>
+							<h3><a href="single-news.html">Invitation card Designing and Printing</a></h3>
+							<p class="excerpt">
+
 							</p>
-							<p class="excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
 							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>
+				
+				<!--Wedding card-->
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-6"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Wedding card Designing and Printing</a></h3>
+							<p class="excerpt">
+							
+							</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!--Anniversary card-->
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-6"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Anniversary card Designing and Printing</a></h3>
+							<p class="excerpt">
+							
+							</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!--Birthday card-->
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-6"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Birthday card Designing and Printing</a></h3>
+							<p class="excerpt">
+							
+							</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
 			</div>
+
 
 			<div class="row">
 				<div class="container">
@@ -240,11 +273,11 @@
 						<div class="col-lg-12 text-center">
 							<div class="pagination-wrap">
 								<ul>
-									<li><a href="#">Prev</a></li>
+									<li><a href="#" onclick="prev()">Prev</a></li>
 									<li><a href="#">1</a></li>
 									<li><a class="active" href="#">2</a></li>
 									<li><a href="#">3</a></li>
-									<li><a href="#">Next</a></li>
+									<li><a href="#" onclick="next()">Next</a></li>
 								</ul>
 							</div>
 						</div>
@@ -290,16 +323,16 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box about-widget">
 						<h2 class="widget-title">About us</h2>
-						<p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+						<p>At Bright mark, we specialize in professional graphic design and quality printing services to help your brand stand out. From logos and business cards to posters and brochures, our team delivers creative solutions tailored to your needs. Let us bring your ideas to life with style and precision.</p>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box get-in-touch">
 						<h2 class="widget-title">Get in Touch</h2>
 						<ul>
-							<li>34/8, East Hukupara, Gifirtok, Sadan.</li>
-							<li>support@fruitkha.com</li>
-							<li>+00 111 222 3333</li>
+							<li>We are everywhere ,You can contact us online.</li>
+							<li>brightmarkgraphic@gmail.com</li>
+							<li>070 400 65 32</li>
 						</ul>
 					</div>
 				</div>
@@ -318,7 +351,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="footer-box subscribe">
 						<h2 class="widget-title">Subscribe</h2>
-						<p>Subscribe to our mailing list to get the latest updates.</p>
+						<p>Join our mailing list for exclusive updates, special offers, and a chance to win in our exciting lucky draws!</p>
 						<form action="index.html">
 							<input type="email" placeholder="Email">
 							<button type="submit"><i class="fas fa-paper-plane"></i></button>
@@ -335,8 +368,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-md-12">
-					<p>Copyrights &copy; 2019 - <a href="https://imransdesign.com/">Imran Hossain</a>,  All Rights Reserved.<br>
-						Distributed By - <a href="https://themewagon.com/">Themewagon</a>
+					<p>Copyrights &copy; 2024 - <a href="https://imransdesign.com/">Code solution</a>,  All Rights Reserved.<br>
+						Distributed By - <a href="https://themewagon.com/">Chethaka Himsara</a>
 					</p>
 				</div>
 				<div class="col-lg-6 text-right col-md-12">
@@ -375,6 +408,8 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<!--single service JS-->
+	<script src="single-service.js"></script>
 
 </body>
 </html>
