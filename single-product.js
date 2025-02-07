@@ -12,10 +12,10 @@ let imageElement = document.getElementById('single-product-img');
 function AddImageSlide(image1, image2, image3) {
     imageElement.innerHTML = `
         <div class="image-slider-2">
-            <div class="slides-2">
-                <div class="slide-2" style="background-image: url(${image1});"></div>
-                <div class="slide-2" style="background-image: url(${image2});"></div>
-                <div class="slide-2" style="background-image: url(${image3});"></div>
+            <div class="slides">
+                <div class="slide" style="background-image: url(${image1});"></div>
+                <div class="slide" style="background-image: url(${image2});"></div>
+                <div class="slide" style="background-image: url(${image3});"></div>
             </div>
             <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
             <button class="next" onclick="moveSlide(1)">&#10095;</button>
@@ -55,9 +55,9 @@ Bring your ideas to life with Bright Mark’s expert book printing services. Con
 
 `;
 
-AddImageSlide("/assets/img/Services-images/BOOK%20PRINTING/1.jpg", 
-	"/assets/img/Services-images/BOOK%20PRINTING/3.jpg", 
-	"/assets/img/Services-images/BOOK%20PRINTING/4.jpg");
+AddImageSlide("/assets/img/Shop-Items/inner-colour-hand-mug/1.JPG", 
+	"/assets/img/Shop-Items/inner-colour-hand-mug/2.JPG", 
+	"/assets/img/Shop-Items/inner-colour-hand-mug/3.JPG");
 
     alert("check")
 
