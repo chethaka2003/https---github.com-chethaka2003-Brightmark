@@ -9,20 +9,19 @@ function setTitle(event) {
 
 let imageElement = document.getElementById('single-product-img');
 
-function AddImageSlide(image1,image2,image3){
-    imageElement.style.backgroundImage = "none";
+function AddImageSlide(image1, image2, image3) {
     imageElement.innerHTML = `
-                    <div class="image-slider">
-                        <div class="slides">
-                            <div class="slide" style="background-image: url(${image1});"></div>
-                            <div class="slide" style="background-image: url(${image2});"></div>
-                            <div class="slide" style="background-image: url(${image3});"></div>
-                        </div>
-                        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-                        <button class="next" onclick="moveSlide(1)">&#10095;</button>
-                    </div>
-    `
-
+        <div class="image-slider-2">
+            <div class="slides-2">
+                <div class="slide-2" style="background-image: url(${image1});"></div>
+                <div class="slide-2" style="background-image: url(${image2});"></div>
+                <div class="slide-2" style="background-image: url(${image3});"></div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    `;
+    alert("Add image slide function triggered");
 }
 
 // Event listener to update the content dynamically
@@ -43,28 +42,33 @@ document.addEventListener("DOMContentLoaded", function () {
         if (contentElement) {
 
             if (title == "Inner Colour Handle Mug (Normal)") {
-                contentElement.innerText = `Add a touch of style to your daily coffee routine with our Inner Colour Handle Mug. Designed for both personal use and gifting, this mug features a vibrant inner color and matching handle, making it a unique and eye-catching choice.
+                contentElement.innerText = `At Bright Mark, we offer high-quality book printing services tailored to your needs. Whether you’re printing educational books, novels, catalogs, manuals, or custom notebooks, we ensure sharp prints, durable binding, and a professional finish.
 
-Features:
-☕ Premium Quality Ceramic – Durable and heat-resistant for everyday use
-🎨 Stylish Inner & Handle Color – Available in multiple colors to match your personality
-🖨️ Customizable Design – Perfect for logos, quotes, or personalized prints
-💎 Glossy Finish – Smooth surface for a sleek and elegant look
-📏 Standard Capacity – Ideal for coffee, tea, or any beverage
-🚀 Microwave & Dishwasher Safe – Easy to clean and convenient to use
+Our Book Printing Features:
+📖 Custom Designs – Covers & layouts that match your vision
+🖨️ High-Quality Printing – Crisp text and vibrant images
+📚 Various Binding Options – Hardcover, softcover, spiral, and more
+📦 Bulk & Single Orders – Flexible printing solutions
+⏳ Fast Turnaround – Get your books printed on time
 
-Upgrade your mug collection or gift a loved one with this Inner Colour Handle Mug. Order yours today! `;
+Bring your ideas to life with Bright Mark’s expert book printing services. Contact us today!
 
-AddImageSlide("/assets/img/Shop-Items/inner-colour-hand-mug/1.JPG", 
-	"/assets/img/Shop-Items/inner-colour-hand-mug/3.jpg", 
-	"/assets/img/Shop-Items/inner-colour-hand-mug/4.jpg");
+`;
+
+AddImageSlide("/assets/img/Services-images/BOOK%20PRINTING/1.jpg", 
+	"/assets/img/Services-images/BOOK%20PRINTING/3.jpg", 
+	"/assets/img/Services-images/BOOK%20PRINTING/4.jpg");
+
+    alert("check")
+
+    
 
             } 
             
         }
     }
 
-	renderPage(i);
+	// renderPage(i);
 });
 
 let currentIndex = 0;

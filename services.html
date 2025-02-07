@@ -7,7 +7,7 @@
 	<meta name="description" content="Responsive Bootstrap4 Shop Template, Created by Imran Hossain from https://imransdesign.com/">
 
 	<!-- title -->
-	<title>Check Out</title>
+	<title>News</title>
 
 	<!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
@@ -50,7 +50,7 @@
 					<div class="main-menu-wrap">
 						<!-- logo -->
 						<div class="site-logo">
-							<a href="index_2.html">
+							<a href="index.html">
 								<img src="assets/img/logo.png" alt="">
 							</a>
 						</div>
@@ -59,35 +59,17 @@
 						<!-- menu start -->
 						<nav class="main-menu">
 							<ul>
-								<li class="current-list-item"><a href="index_2.html">Home</a>
+								<li ><a href="index.html">Home</a>
 					
 								</li>
 								<li><a href="about.html">About</a></li>
-								<li><a href="#">Pages</a>
-									<ul class="sub-menu">
-										<li><a href="#">404 page</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="cart.html">Cart</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="contact.html">Contact</a></li>
-										<li><a href="news.html">News</a></li>
-										<li><a href="shop.html">Shop</a></li>
-									</ul>
-								</li>
-								<li><a href="news.html">Services</a>
+								<li class="current-list-item"><a href="services.html" >Services</a>
 								</li>
 								<li><a href="contact.html">Contact</a></li>
 								<li><a href="shop.html">Shop</a>
-									<ul class="sub-menu">
-										<li><a href="shop.html">Shop</a></li>
-										<li><a href="checkout.html">Check Out</a></li>
-										<li><a href="single-product.html">Single Product</a></li>
-										<li><a href="cart.html">Cart</a></li>
-									</ul>
 								</li>
 								<li>
 									<div class="header-icons">
-										<a class="shopping-cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
 										<a class="mobile-hide search-bar-icon" href="#"><i class="fas fa-search"></i></a>
 									</div>
 								</li>
@@ -128,8 +110,8 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2 text-center">
 					<div class="breadcrumb-text">
-						<p>Fresh and Organic</p>
-						<h1>Check Out Product</h1>
+						<p>Organic Information</p>
+						<h1>Our services</h1>
 					</div>
 				</div>
 			</div>
@@ -137,122 +119,156 @@
 	</div>
 	<!-- end breadcrumb section -->
 
-	<!-- check out section -->
-	<div class="checkout-section mt-150 mb-150">
-		<div class="container">
+	<!-- latest news -->
+	<div class="latest-news mt-150 mb-150">
+		<div class="container" id="news_container">
 			<div class="row">
-				<div class="col-lg-8">
-					<div class="checkout-accordion-wrap">
-						<div class="accordion" id="accordionExample">
-						  <div class="card single-accordion">
-						    <div class="card-header" id="headingOne">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-						          Billing Address
-						        </button>
-						      </h5>
-						    </div>
-
-						    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-						      <div class="card-body">
-						        <div class="billing-address-form">
-						        	<form action="index.html">
-						        		<p><input type="text" placeholder="Name"></p>
-						        		<p><input type="email" placeholder="Email"></p>
-						        		<p><input type="text" placeholder="Address"></p>
-						        		<p><input type="tel" placeholder="Phone"></p>
-						        		<p><textarea name="bill" id="bill" cols="30" rows="10" placeholder="Say Something"></textarea></p>
-						        	</form>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card single-accordion">
-						    <div class="card-header" id="headingTwo">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						          Shipping Address
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-						      <div class="card-body">
-						        <div class="shipping-address-form">
-						        	<p>Your shipping address form is here.</p>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
-						  <div class="card single-accordion">
-						    <div class="card-header" id="headingThree">
-						      <h5 class="mb-0">
-						        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-						          Card Details
-						        </button>
-						      </h5>
-						    </div>
-						    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-						      <div class="card-body">
-						        <div class="card-details">
-						        	<p>Your card details goes here.</p>
-						        </div>
-						      </div>
-						    </div>
-						  </div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news" onclick="setTitle(event)">
+						<a href="single-services.html">
+							<div class="latest-news-bg news-bg-1"></div>
+						</a>
+						<div class="news-text-box">
+							<h3 id="service-real-title"><a href="single-services.html">Book Printing</a></h3>
+							<p class="excerpt">
+							 
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
 						</div>
+					</div>
+					
+				</div>
 
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-services.html"><div class="latest-news-bg news-bg-2"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-services.html">Sticker Printing</a></h3>
+							<p class="excerpt">
+
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+					<div class = "single-latest-news"  onclick="setTitle(event)">
+						<a href="single-services.html"><div class="latest-news-bg news-bg-3"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-services.html">Visiting card Designing and printing</a></h3>
+							<p class="excerpt">
+
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-services.html"><div class="latest-news-bg news-bg-4"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-services.html">Letter head Designing and Printing</a></h3>
+
+							<p class="excerpt">
+
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-services.html"><div class="latest-news-bg news-bg-5"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-services.html">ID card Designing and Printing (Plastic)</a></h3>
+							<p class="excerpt">
+
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<!--Invitationncard-->
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-services.html"><div class="latest-news-bg news-bg-6"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-services.html">Invitation card Designing and Printing</a></h3>
+							<p class="excerpt">
+
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				
+				<!--Wedding card-->
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-services.html"><div class="latest-news-bg news-bg-7"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-services.html">Wedding card Designing and Printing</a></h3>
+							<p class="excerpt">
+							
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
 					</div>
 				</div>
 
-				<div class="col-lg-4">
-					<div class="order-details-wrap">
-						<table class="order-details">
-							<thead>
-								<tr>
-									<th>Your order Details</th>
-									<th>Price</th>
-								</tr>
-							</thead>
-							<tbody class="order-details-body">
-								<tr>
-									<td>Product</td>
-									<td>Total</td>
-								</tr>
-								<tr>
-									<td>Strawberry</td>
-									<td>$85.00</td>
-								</tr>
-								<tr>
-									<td>Berry</td>
-									<td>$70.00</td>
-								</tr>
-								<tr>
-									<td>Lemon</td>
-									<td>$35.00</td>
-								</tr>
-							</tbody>
-							<tbody class="checkout-details">
-								<tr>
-									<td>Subtotal</td>
-									<td>$190</td>
-								</tr>
-								<tr>
-									<td>Shipping</td>
-									<td>$50</td>
-								</tr>
-								<tr>
-									<td>Total</td>
-									<td>$240</td>
-								</tr>
-							</tbody>
-						</table>
-						<a href="#" class="boxed-btn">Place Order</a>
+				<!--Anniversary card-->
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-services.html"><div class="latest-news-bg news-bg-8"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-services.html">Anniversary card Designing and Printing</a></h3>
+							<p class="excerpt">
+							
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<!--Birthday card-->
+
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news"  onclick="setTitle(event)">
+						<a href="single-services.html"><div class="latest-news-bg news-bg-9"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-services.html">Birthday card Designing and Printing</a></h3>
+							<p class="excerpt">
+							
+							</p>
+							<a href="single-services.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+
+			<div class="row">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<div class="pagination-wrap">
+								<ul>
+									<li><a href="#" onclick="prev()">Prev</a></li>
+									<li><a href="#">1</a></li>
+									<li><a class="active" href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#" onclick="next()">Next</a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- end check out section -->
+	<!-- end latest news -->
 
 	<!-- logo carousel -->
 	<div class="logo-carousel-section">
@@ -263,17 +279,44 @@
 						<div class="single-logo-item">
 							<img src="assets/img/company-logos/1.png" alt="">
 						</div>
-						<div class="single-logo-item">
+						<!-- <div class="single-logo-item">
 							<img src="assets/img/company-logos/2.png" alt="">
-						</div>
+						</div> -->
 						<div class="single-logo-item">
 							<img src="assets/img/company-logos/3.png" alt="">
 						</div>
-						<div class="single-logo-item">
+						<!-- <div class="single-logo-item">
 							<img src="assets/img/company-logos/4.png" alt="">
+						</div> -->
+						<!-- <div class="single-logo-item">
+							<img src="assets/img/company-logos/5.png" alt="">
+						</div> -->
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/6.png" alt="">
 						</div>
 						<div class="single-logo-item">
-							<img src="assets/img/company-logos/5.png" alt="">
+							<img src="assets/img/company-logos/7.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/8.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/9.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/10.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/11.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/12.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/13.png" alt="">
+						</div>
+						<div class="single-logo-item">
+							<img src="assets/img/company-logos/14.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -309,7 +352,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="about.html">About</a></li>
 							<li><a href="services.html">Shop</a></li>
-							<li><a href="news.html">News</a></li>
+							<li><a href="services.html">News</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
@@ -374,6 +417,8 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
+	<!--single service JS-->
+	<script src="single-service.js"></script>
 
 </body>
 </html>

@@ -126,6 +126,7 @@
         $(".homepage-slider").on("translate.owl.carousel", function(){
             $(".hero-text-tablecell .subtitle").removeClass("animated fadeInUp").css({'opacity': '0'});
             $(".hero-text-tablecell h1").removeClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.3s'});
+            $(".hero-text-tablecell h5").removeClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.3s'});
             $(".hero-btns").removeClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.5s'});
             $(".social-icons-hero").removeClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.5s'});
         });
@@ -133,6 +134,7 @@
         $(".homepage-slider").on("translated.owl.carousel", function(){
             $(".hero-text-tablecell .subtitle").addClass("animated fadeInUp").css({'opacity': '0'});
             $(".hero-text-tablecell h1").addClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.3s'});
+            $(".hero-text-tablecell h5").addClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.3s'});
             $(".hero-btns").addClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.5s'});
             $(".social-icons-hero").addClass("animated fadeInUp").css({'opacity': '0', 'animation-delay' : '0.5s'});
         });
