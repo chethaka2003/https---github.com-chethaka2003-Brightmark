@@ -789,10 +789,8 @@ const news_1 = `<div class="latest-news mt-150 mb-150">
 						<div class="col-lg-12 text-center">
 							<div class="pagination-wrap">
 								<ul>
-									<li><a href="#" onclick="prev()">Prev</a></li>
-									<li><a href="#">1</a></li>
-									<li><a class="active" href="#">2</a></li>
-									<li><a href="#">3</a></li>
+									<li><a class="active" href="#">1</a></li>
+									<li><a  href="#" onclick="next()">2</a></li>
 									<li><a href="#" onclick="next()">Next</a></li>
 								</ul>
 							</div>
@@ -821,17 +819,18 @@ const news_2 = `<div class="row">
 				</div>
 
 				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news"  onclick="setTitle(event)">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-11"></div></a>
-						<div class="news-text-box">
-							<h3><a href="single-news.html">Deed Print</a></h3>
-							<p class="excerpt">
+		<div class="single-latest-news"  onclick="setTitle(event)">
+			<a href="single-news.html"><div class="latest-news-bg news-bg-58"></div></a>
+			<div class="news-text-box">
+				<h3><a href="single-news.html">Tile Printing </a></h3>
 
-							</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-						</div>
-					</div>
-				</div>
+				<p class="excerpt">
+
+				</p>
+				<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+			</div>
+		</div>
+	</div>
 				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
 					<div class = "single-latest-news"  onclick="setTitle(event)">
 						<a href="single-news.html"><div class="latest-news-bg news-bg-12"></div></a>
@@ -858,30 +857,29 @@ const news_2 = `<div class="row">
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news"  onclick="setTitle(event)">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-14"></div></a>
-						<div class="news-text-box">
-							<h3><a href="single-news.html">Art Board Designing and Printing (Plastic)</a></h3>
-							<p class="excerpt">
+		<div class="single-latest-news"  onclick="setTitle(event)">
+			<a href="single-news.html"><div class="latest-news-bg news-bg-56"></div></a>
+			<div class="news-text-box">
+				<h3><a href="single-news.html">Flag Printing</a></h3>
+				<p class="excerpt">
 
-							</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-						</div>
-					</div>
-				</div>
-				<!--Invitationncard-->
-				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news"  onclick="setTitle(event)">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-15"></div></a>
-						<div class="news-text-box">
-							<h3><a href="single-news.html">Ivory Board Designing and Printing</a></h3>
-							<p class="excerpt">
+				</p>
+				<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
+		<div class = "single-latest-news"  onclick="setTitle(event)">
+			<a href="single-news.html"><div class="latest-news-bg news-bg-57"></div></a>
+			<div class="news-text-box">
+				<h3><a href="single-news.html">Glass Printing </a></h3>
+				<p class="excerpt">
 
-							</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-						</div>
-					</div>
-				</div>
+				</p>
+				<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+			</div>
+		</div>
+	</div>
 				
 				<!--Wedding card-->
 				<div class="col-lg-4 col-md-6">
@@ -915,17 +913,20 @@ const news_2 = `<div class="row">
 				<!--Birthday card-->
 
 				<div class="col-lg-4 col-md-6">
-					<div class="single-latest-news"  onclick="setTitle(event)">
-						<a href="single-news.html"><div class="latest-news-bg news-bg-18"></div></a>
-						<div class="news-text-box">
-							<h3><a href="single-news.html">Visiting card Designing and Printing</a></h3>
-							<p class="excerpt">
-							
-							</p>
-							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-						</div>
-					</div>
-				</div>
+		<div class="single-latest-news" onclick="setTitle(event)">
+			<a href="single-news.html">
+				<div class="latest-news-bg news-bg-55"></div>
+			</a>
+			<div class="news-text-box">
+				<h3 id="service-real-title"><a href="single-news.html">Bottle Printing</a></h3>
+				<p class="excerpt">
+				 
+				</p>
+				<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+			</div>
+		</div>
+		
+	</div>
 
 			</div>
 
@@ -937,9 +938,9 @@ const news_2 = `<div class="row">
 							<div class="pagination-wrap">
 								<ul>
 									<li><a href="#" onclick="prev()">Prev</a></li>
-									<li><a href="#">1</a></li>
+									<li><a href="#" onclick="prev()">1</a></li>
 									<li><a class="active" href="#">2</a></li>
-									<li><a href="#">3</a></li>
+									<li><a href="#" onclick="next()">3</a></li>
 									<li><a href="#" onclick="next()">Next</a></li>
 								</ul>
 							</div>
@@ -1083,9 +1084,9 @@ const news_3 = `<div class="row">
 							<div class="pagination-wrap">
 								<ul>
 									<li><a href="#" onclick="prev()">Prev</a></li>
-									<li><a href="#">1</a></li>
-									<li><a class="active" href="#">2</a></li>
-									<li><a href="#">3</a></li>
+									<li><a href="#" onclick="prev()">2</a></li>
+									<li><a class="active" href="#">3</a></li>
+									<li><a href="#" onclick="next()">4</a></li>
 									<li><a href="#" onclick="next()">Next</a></li>
 								</ul>
 							</div>
@@ -1229,9 +1230,9 @@ const news_4 = `<div class="row">
 							<div class="pagination-wrap">
 								<ul>
 									<li><a href="#" onclick="prev()">Prev</a></li>
-									<li><a href="#">1</a></li>
-									<li><a class="active" href="#">2</a></li>
-									<li><a href="#">3</a></li>
+									<li><a href="#" onclick="prev()">3</a></li>
+									<li><a class="active" href="#">4</a></li>
+									<li><a href="#" onclick="next()">5</a></li>
 									<li><a href="#" onclick="next()">Next</a></li>
 								</ul>
 							</div>
@@ -1375,10 +1376,10 @@ const news_5 = `<div class="row">
 						<div class="pagination-wrap">
 							<ul>
 								<li><a href="#" onclick="prev()">Prev</a></li>
-								<li><a href="#">1</a></li>
-								<li><a class="active" href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#" onclick="next()">Next</a></li>
+									<li><a href="#" onclick="prev()">4</a></li>
+									<li><a class="active" href="#">5</a></li>
+									<li><a href="#" onclick="next()">6</a></li>
+									<li><a href="#" onclick="next()">Next</a></li>
 							</ul>
 						</div>
 					</div>
@@ -1521,10 +1522,10 @@ const news_6 = `<div class="row">
 					<div class="pagination-wrap">
 						<ul>
 							<li><a href="#" onclick="prev()">Prev</a></li>
-							<li><a href="#">1</a></li>
-							<li><a class="active" href="#">2</a></li>
-							<li><a href="#">3</a></li>
-							<li><a href="#" onclick="next()">Next</a></li>
+									<li><a href="#" onclick="prev()">5</a></li>
+									<li><a class="active" href="#">6</a></li>
+									<li><a href="#" onclick="next()">7</a></li>
+									<li><a href="#" onclick="next()">Next</a></li>
 						</ul>
 					</div>
 				</div>
@@ -1533,59 +1534,6 @@ const news_6 = `<div class="row">
 	</div>`
 	
 const news_7 = `<div class="row">
-	<div class="col-lg-4 col-md-6">
-		<div class="single-latest-news" onclick="setTitle(event)">
-			<a href="single-news.html">
-				<div class="latest-news-bg news-bg-55"></div>
-			</a>
-			<div class="news-text-box">
-				<h3 id="service-real-title"><a href="single-news.html">Bottle Printing</a></h3>
-				<p class="excerpt">
-				 
-				</p>
-				<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-			</div>
-		</div>
-		
-	</div>
-
-	<div class="col-lg-4 col-md-6">
-		<div class="single-latest-news"  onclick="setTitle(event)">
-			<a href="single-news.html"><div class="latest-news-bg news-bg-56"></div></a>
-			<div class="news-text-box">
-				<h3><a href="single-news.html">Flag Printing</a></h3>
-				<p class="excerpt">
-
-				</p>
-				<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-			</div>
-		</div>
-	</div>
-	<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0">
-		<div class = "single-latest-news"  onclick="setTitle(event)">
-			<a href="single-news.html"><div class="latest-news-bg news-bg-57"></div></a>
-			<div class="news-text-box">
-				<h3><a href="single-news.html">Glass Printing </a></h3>
-				<p class="excerpt">
-
-				</p>
-				<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-			</div>
-		</div>
-	</div>
-	<div class="col-lg-4 col-md-6">
-		<div class="single-latest-news"  onclick="setTitle(event)">
-			<a href="single-news.html"><div class="latest-news-bg news-bg-58"></div></a>
-			<div class="news-text-box">
-				<h3><a href="single-news.html">Tile Printing </a></h3>
-
-				<p class="excerpt">
-
-				</p>
-				<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
-			</div>
-		</div>
-	</div>
 	
 
 </div>
@@ -1598,10 +1546,8 @@ const news_7 = `<div class="row">
 				<div class="pagination-wrap">
 					<ul>
 						<li><a href="#" onclick="prev()">Prev</a></li>
-						<li><a href="#">1</a></li>
-						<li><a class="active" href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#" onclick="next()">Next</a></li>
+						<li><a href="#" onclick="prev()">6</a></li>
+						<li><a class="active" href="#">7</a></li>
 					</ul>
 				</div>
 			</div>

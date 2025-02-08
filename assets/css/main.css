@@ -3100,6 +3100,7 @@ table.order-details tbody td {
 }
 
 .massage-container{
+  z-index: 1111;
   position: fixed;
   padding-bottom: 25px;
   padding-right: 25px;
@@ -3109,6 +3110,10 @@ table.order-details tbody td {
 
 .whatsapp{
   padding-bottom: 15px;
+  width: 50px;
+  cursor: pointer;
+}
+.facebook{
   width: 50px;
   cursor: pointer;
 }
@@ -3127,3 +3132,11 @@ table.order-details tbody td {
   display: block;
   width: 2000px;
 }
+
+.contact-social{
+  display: flex;
+  flex-direction: row;}
+
+.app{
+  padding: 10px;
+}  
